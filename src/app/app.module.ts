@@ -19,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderProductsComponent } from './pages/home/components/header-products/header-products.component';
 import {MatCardModule} from '@angular/material/card';
 import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { FiltersComponent } from './pages/home/components/filters/filters.compon
     HomeComponent,
     HeaderProductsComponent,
     FiltersComponent,
+    ProductBoxComponent,
   ],
   imports: [
     BrowserModule,
