@@ -7,6 +7,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderProductsComponent {
   @Output() columnsCountChange = new EventEmitter<number>()
+  @Output() itemsCountChange = new EventEmitter<number>();
+
   sort = 'desc'
   showItemsCount = 12
 
