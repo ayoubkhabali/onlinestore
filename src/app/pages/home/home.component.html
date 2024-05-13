@@ -5,9 +5,18 @@
 
         <mat-drawer-content class="p-6" >
             <app-header-products (columnsCountChange)="onColumnsUpdated($event)"></app-header-products>
-            <mat-grid-list guttersize="16" [rowHeight]="rowHeight" [cols]="cols">
+            <mat-grid-list gutterSize="16" [rowHeight]="rowHeight" [cols]="cols">
                 <mat-grid-tile>
-                    <app-product-box></app-product-box>
+                    <app-product-box class="w-full" [fullWidthMode]="cols === 1" ></app-product-box>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-product-box class="w-full" [fullWidthMode]="cols === 1" ></app-product-box>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-product-box class="w-full" [fullWidthMode]="cols === 1" ></app-product-box>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <app-product-box class="w-full" [fullWidthMode]="cols === 1" ></app-product-box>
                 </mat-grid-tile>
             </mat-grid-list>
 

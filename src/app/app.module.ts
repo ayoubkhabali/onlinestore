@@ -20,6 +20,7 @@ import { HeaderProductsComponent } from './pages/home/components/header-products
 import {MatCardModule} from '@angular/material/card';
 import { FiltersComponent } from './pages/home/components/filters/filters.component';
 import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ProductBoxComponent } from './pages/home/components/product-box/product
     HeaderProductsComponent,
     FiltersComponent,
     ProductBoxComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
